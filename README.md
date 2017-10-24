@@ -15,7 +15,7 @@ I'll be updating this section as the situation develops.
  <br/>
 <h2>Todo List:</h2>
 <hr/>
-1. Implement a plan of attack and goals.
-2. Pretty much re-write everything.
+1. Implement a plan of attack and goals.<br/>
+2. Pretty much re-write everything.<br/>
 3. Focus on modularity.
 <br/>
