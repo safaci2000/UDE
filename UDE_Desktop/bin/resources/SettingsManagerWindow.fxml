@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?scenebuilder-background-color 0x444444ff?>
+
+<AnchorPane fx:id="desktopArea" minHeight="300.0" minWidth="300.0" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <CheckBox fx:id="toGridOrNaw" layoutX="85.0" layoutY="558.0" mnemonicParsing="false" text="Gridded View or Free Form View" />
+   </children>
+</AnchorPane>

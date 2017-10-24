@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+<?scenebuilder-background-color 0x444444ff?>
+
+<AnchorPane minHeight="300.0" minWidth="300.0" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BackgroundMngrController">
+  <children>
+    <HBox alignment="TOP_RIGHT" layoutY="0.0" prefHeight="21.0" prefWidth="948.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+      <children>
+        <TextField fx:id="txtDirPath" blendMode="DIFFERENCE" onKeyReleased="#onEnter" prefWidth="200.0" promptText="Dir Path" HBox.hgrow="ALWAYS" />
+        <Button fx:id="clear" mnemonicParsing="false" onAction="#clearBttnClick" text="Clear" />
+      </children>
+    </HBox>
+    <ScrollPane id="ScrollPane" minHeight="300.0" minWidth="300.0" prefHeight="547.0" prefViewportHeight="534.0" prefViewportWidth="742.0" prefWidth="770.0" style="    -fx-fit-to-height: true;&#10;    -fx-fit-to-width: true;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+      <content>
+        <TilePane fx:id="tilePane" hgap="15.0" prefHeight="532.0" prefWidth="755.0" vgap="15.0">
+          <children>
+            <Label fx:id="dir" contentDisplay="CENTER" labelFor="$clear" onMouseClicked="#setNewDir" prefHeight="575.0" prefWidth="948.0" text="Choose Dir" textAlignment="LEFT" textFill="#dfdfdf" textOverrun="CLIP" underline="false" wrapText="false" TilePane.alignment="CENTER_LEFT">
+              <font>
+                <Font name="System Bold" size="32.0" />
+              </font>
+              <TilePane.margin>
+                <Insets />
+              </TilePane.margin>
+            </Label>
+          </children>
+        </TilePane>
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

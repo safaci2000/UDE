@@ -1,0 +1,14 @@
+.root {
+    /*-fx-background: rgba(68, 68, 68, 0.8); // == #444444;*/
+    -fx-background: rgba(0, 0, 0, 0.0); // == #444444;
+}
+.button {
+}
+
+.vbox {
+    -fx-background-color: rgba(68, 68, 68, .5); // == #444444;
+}
+
+.vbox:hover {
+    -fx-background-color: rgba(68, 68, 68, 1) // #00e8ff; // == #444444;
+}
